@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "//kotDi911.github.io/shop/static/css/main.073c9b0a.css",
+    "main.js": "//kotDi911.github.io/shop/static/js/main.17aad9ce.js",
+    "static/media/logo.svg": "//kotDi911.github.io/shop/static/media/logo.96067ced27fabae2bd901a1dbafe4518.svg",
+    "index.html": "//kotDi911.github.io/shop/index.html",
+    "main.073c9b0a.css.map": "//kotDi911.github.io/shop/static/css/main.073c9b0a.css.map",
+    "main.17aad9ce.js.map": "//kotDi911.github.io/shop/static/js/main.17aad9ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.17aad9ce.js"
+  ]
+}
