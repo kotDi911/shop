@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "//kotDi911.github.io/shop/static/css/main.073c9b0a.css",
-    "main.js": "//kotDi911.github.io/shop/static/js/main.17aad9ce.js",
-    "static/media/logo.svg": "//kotDi911.github.io/shop/static/media/logo.96067ced27fabae2bd901a1dbafe4518.svg",
-    "index.html": "//kotDi911.github.io/shop/index.html",
-    "main.073c9b0a.css.map": "//kotDi911.github.io/shop/static/css/main.073c9b0a.css.map",
-    "main.17aad9ce.js.map": "//kotDi911.github.io/shop/static/js/main.17aad9ce.js.map"
+    "main.css": "/shop/static/css/main.c95c6ad9.css",
+    "main.js": "/shop/static/js/main.3088cf10.js",
+    "static/media/indesitIWUB.jpg": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
+    "static/media/indesitOMTWE.jpg": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
+    "static/media/indesitEWDE.jpg": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+    "static/media/indesitIWSB.jpg": "/shop/static/media/indesitIWSB.cff64fe2d8f75e4378fc.jpg",
+    "static/media/logo.svg": "/shop/static/media/logo.96067ced27fabae2bd901a1dbafe4518.svg",
+    "static/media/addToBasket.svg": "/shop/static/media/addToBasket.c785c9368937c13e8a52275221448cb0.svg",
+    "static/media/addToBasketActive.svg": "/shop/static/media/addToBasketActive.66f75148518994f8e763af64bcd2182a.svg",
+    "static/media/basketActive.svg": "/shop/static/media/basketActive.638f7fc7e00eb6b4b75ae8164cc79926.svg",
+    "static/media/basket.svg": "/shop/static/media/basket.14b42f9aee0ccff92547d5d6f5b43b18.svg",
+    "static/media/trashBasket.svg": "/shop/static/media/trashBasket.5d37eebd1ef3fae84f6b1438f71611e2.svg",
+    "index.html": "/shop/index.html",
+    "main.c95c6ad9.css.map": "/shop/static/css/main.c95c6ad9.css.map",
+    "main.3088cf10.js.map": "/shop/static/js/main.3088cf10.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.17aad9ce.js"
+    "static/css/main.c95c6ad9.css",
+    "static/js/main.3088cf10.js"
   ]
 }
