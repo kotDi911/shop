@@ -1,0 +1,102 @@
+.basket {
+  padding: 20px;
+  text-align: center;
+
+  &__card {
+    justify-content: space-between;
+    box-shadow: 0 0 7px 1px;
+    padding: 2px 15px;
+
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+
+    &-justify {
+      margin-right: 20px;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    height: 100%;
+
+    &-box {
+      height: 5vh;
+    }
+  }
+
+  &__btn {
+    width: 10%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #d8edff;
+    cursor: pointer;
+
+    &:hover {
+      background: darkred;
+    }
+  }
+  &__title, &__price{
+    font-size: 20px;
+  }
+}
+
+.clear-btn {
+  background: #6b8d25;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  margin: 10px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  &:hover{
+    background: darkred;
+  }
+}
+
+.del-button {
+  height: 5vh;
+  width: 5vh;
+  padding: 5px;
+  background: #6b8d25;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  &:hover{
+    background: darkred;
+  }
+  &-img {
+    width: 100%;
+  }
+}
+
+.message {
+  font-size: 48px;
+  margin: 20px 0;
+  cursor: default;
+}
+
+.link {
+  font-size: 18px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+
+  &:hover {
+    color: #6b8d25;
+  }
+}
+
+.sum{
+  padding: 15px;
+  &__price{
+    margin-right: 4%;
+    color: darkred;
+  }
+  &__title, &__price{
+    font-size: 22px;
+    font-weight: bold;
+  }
+}

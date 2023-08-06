@@ -1,0 +1,27 @@
+.details {
+  margin: 20px;
+  &__img {
+    width: 60%;
+    &-cont{
+      width: 40%;
+      text-align: center;
+    }
+  }
+  &__text{
+    width: 60%;
+    justify-content: space-between;
+  }
+  &__btn{
+    font-size: 22px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 25%;
+    background: #6b8d25;
+    color: white;
+    border-radius: 25px;
+    &-img{
+      width: 25%;
+    }
+  }
+}
