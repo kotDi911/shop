@@ -36,7 +36,7 @@ const DetailsCard = ({card}) => {
                 </div>
                 <div className='details__text flex column'>
                     <h1 className='text__title'>{name}</h1>
-                    <p>
+                    <p className='details__description'>
                         <b>Описание товара: </b> {description}
                     </p>
                     <p>

@@ -24,7 +24,7 @@ const Details = () => {
 
     return (
         <>
-            <DetailsCard card={card}/>)
+            <DetailsCard card={card}/>
         </>
     )
 }

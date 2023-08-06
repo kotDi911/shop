@@ -44,7 +44,7 @@ const Card = (card) => {
             </div>
             <h3 className='card__name'>{name}</h3>
             <div className='flex align-i-center space-between'>
-                <p>
+                <p className='card__price'>
                     <b>Цена: </b> {value} <span>{unit}</span>
                 </p>
                 <button className='card__basket-btn' onClick={basketHandleClick}>
