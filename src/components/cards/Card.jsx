@@ -8,7 +8,7 @@ const Card = (card) => {
     const addToBasket = useCards((store) => store.addToBasket)
     const delSelectedCards = useCards((store) => store.delSelectedCards)
     const selectedCards = useCards((store) => store.selectedCards)
-    const {id, name, img, price, active} = card;
+    const {id, name, img, price, active, description} = card;
     const {value, unit} = price;
     const navigation = useNavigate();
     const [imgBtn, setImgBtn] = useState('')
@@ -43,8 +43,11 @@ const Card = (card) => {
                 <img className='card__img' src={img} alt=""/>
             </div>
             <h3 className='card__name'>{name}</h3>
-            <div className='flex align-i-center space-between'>
-                <p className='card__price'>
+            <p className='card__description'>
+                {description}
+            </p>
+            <div className='card__price flex align-i-center space-between'>
+                <p className='card__price-text'>
                     <b>Цена: </b> {value} <span>{unit}</span>
                 </p>
                 <button className='card__basket-btn' onClick={basketHandleClick}>

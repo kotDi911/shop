@@ -1,11 +1,13 @@
 @media (max-width: 1100px) {
+  .grid__cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
   .card {
     &__name {
-      padding: 20px 0;
       font-size: 16px;
     }
 
-    &__price {
+    &__price-text {
       font-size: 14px;
     }
 
@@ -28,13 +30,16 @@
 }
 
 @media (max-width: 700px) {
+  .grid__cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
   .card {
     &__name {
       padding: 15px 0;
       font-size: 14px;
     }
 
-    &__price {
+    &__price-text {
       font-size: 12px;
     }
 
@@ -59,7 +64,7 @@
   }
   .grid{
     &__cards {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
     }
     &__details{
       gap: 5px;
@@ -103,12 +108,15 @@
     position: relative;
     cursor: pointer;
   }
+  .card__description{
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 500px) {
   .grid{
     &__cards {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
     }
     &__details{
       gap: 3px;
@@ -151,6 +159,9 @@
     font-size: 14px;
     margin-left: 5px;
   }
+  .card__description{
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .logo-text {
@@ -170,8 +181,7 @@
   }
   .grid{
     &__cards {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: repeat(2, 1fr);
     }
     &__details{
       gap: 3px;
@@ -182,9 +192,9 @@
     height: 12vw;
   }
   .card{
-    &__price{
-      font-size: 16px;
-    }
+    &__price-text{
+        font-size: 16px;
+      }
     &__name{
       font-size: 18px;
     }
