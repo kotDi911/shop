@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.7af16f96.css",
+    "main.css": "/shop/static/css/main.7de1bc56.css",
     "main.js": "/shop/static/js/main.343d887e.js",
     "static/media/indesitIWUB.jpg": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
     "static/media/indesitOMTWE.jpg": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
@@ -13,11 +13,11 @@
     "static/media/basket.svg": "/shop/static/media/basket.14b42f9aee0ccff92547d5d6f5b43b18.svg",
     "static/media/trashBasket.svg": "/shop/static/media/trashBasket.7e81fb4a8503f9f86319ad038be843c3.svg",
     "index.html": "/shop/index.html",
-    "main.7af16f96.css.map": "/shop/static/css/main.7af16f96.css.map",
+    "main.7de1bc56.css.map": "/shop/static/css/main.7de1bc56.css.map",
     "main.343d887e.js.map": "/shop/static/js/main.343d887e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af16f96.css",
+    "static/css/main.7de1bc56.css",
     "static/js/main.343d887e.js"
   ]
 }
