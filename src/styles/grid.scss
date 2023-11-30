@@ -1,7 +1,6 @@
 .grid{
   display: grid;
   margin: 10px;
-  width: 80%;
   &__cards{
     grid-template-columns: repeat(4, 1fr);
     row-gap: 4vh;

@@ -23,7 +23,8 @@ const Card = (card) => {
     }, [selectedCards])
 
     const goToDescription = () => {
-        navigation(`/details/${id}`)
+        sessionStorage.setItem('details', JSON.stringify(card))
+        navigation(`/details/${id+name}`)
     }
 
     const basketHandleClick = () => {
@@ -39,21 +40,22 @@ const Card = (card) => {
 
     return (
         <div className='card flex column'>
-            <div className='card__img-cont' onClick={goToDescription}>
-                <img className='card__img' src={img} alt=""/>
-            </div>
-            <h3 className='card__name'>{name}</h3>
-            <p className='card__description'>
-                {description}
-            </p>
-            <div className='card__price flex align-i-center space-between'>
+
+            <div className='card__cont flex align-i-center space-between' onClick={goToDescription}>
+                <div className='card__img-cont'>
+                    <img className='card__img' src={img} alt=""/>
+                </div>
+                <h3 className='card__name'>{name}</h3>
+                <p className='card__description'>
+                    {description}
+                </p>
                 <p className='card__price-text'>
                     <b>Цена: </b> {value} <span>{unit}</span>
                 </p>
-                <button className='card__basket-btn' onClick={basketHandleClick}>
-                    <img className='card__basket-img' src={imgBtn} alt=""/>
-                </button>
             </div>
+            <button className='card__basket-btn' onClick={basketHandleClick}>
+                <img className='card__basket-img' src={imgBtn} alt=""/>
+            </button>
         </div>
     )
 }

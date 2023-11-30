@@ -1,0 +1,18 @@
+.link{
+  color: #ffffff;
+  background: #282c34;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  &:hover{
+    color: black;
+    background: #6b8d25;
+  }
+}
+.link:not(:last-child){
+  border-right: 2px solid #333a64;
+}
+.nav{
+  background: linear-gradient(to top, #0015ff, #333a64);
+  padding: 3px;
+}

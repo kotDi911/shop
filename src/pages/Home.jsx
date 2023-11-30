@@ -1,5 +1,4 @@
 import CardsGrid from "../components/cards/CardsGrid";
-import Filter from "../components/filter/Filter";
 import Navigation from "../components/nav/Navigation";
 import {useEffect} from "react";
 import {useLocation, useNavigate} from "react-router";
@@ -23,7 +22,7 @@ const Home = () => {
         } else {
             navigate(pathname)
             const names = pathname.split('/')
-            const name = names[names.length -1]
+            const name = names[names.length - 1]
             setChapter(name)
         }
     }, [pathname]);
@@ -32,10 +31,7 @@ const Home = () => {
         <section className='container'>
             <div className='flex column'>
                 <Navigation chapters={chapters}/>
-                <div className='flex'>
-                    <Filter/>
-                    <CardsGrid/>
-                </div>
+                <CardsGrid/>
             </div>
         </section>
     )

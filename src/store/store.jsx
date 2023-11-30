@@ -1,15 +1,15 @@
 import {create} from 'zustand'
 import price from '../prise.json'
-import pick1 from '../assets/indesitEWDE.jpg'
-import pick2 from '../assets/indesitIWSB.jpg'
-import pick3 from '../assets/indesitOMTWE.jpg'
-import pick4 from '../assets/indesitIWUB.jpg'
 
 export const useCards = create((set, get) => ({
     cards: price,
+    detailsCard: JSON.parse(sessionStorage.getItem('details')),
+    filterCards: ()=>{
+
+    },
     selectedCards: [],
     count: 0,
-    chapter: null,
+    chapter: 'wash',
     renderCards : (chapter) =>{
         const {cards} = get();
         let cardM = []

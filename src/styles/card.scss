@@ -22,7 +22,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    cursor: pointer;
 
     &-cont {
       height: 10rem;
@@ -53,8 +52,13 @@
       height: 100%;
     }
   }
-  &__price {
+  &__cont {
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    cursor: pointer;
+    & p{
+      cursor: pointer;
+    }
   }
 }

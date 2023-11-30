@@ -29,7 +29,7 @@ const DetailsCard = ({card}) => {
     }
 
     return (
-        <div className='details flex column'>
+        <div className='container details flex column'>
             <div className='details__main flex'>
                 <div className='details__img-cont'>
                     <img className='details__img' src={img} alt=""/>

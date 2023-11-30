@@ -1,35 +1,33 @@
-import {useCards} from "../../store/store";
 import {Link} from "react-router-dom";
 
 const Navigation = ({chapters}) => {
     const renderName =(name)=>{
         switch (name){
             case 'wash':
-                name = 'Washing machine'
+                name = 'Стиральные машины'
                 break;
             case 'micro':
-                name = 'Microwave'
+                name = 'Микроволновые печи'
                 break;
             case 'cold':
-                name = 'Refrigerators'
+                name = 'Холодильники'
                 break;
             case 'cook':
-                name = 'Cooker'
+                name = 'Плиты'
                 break;
             case 'oven':
-                name = 'Ovens'
+                name = 'Духовые печи'
                 break;
             default:
+                name = null
                 break;
         }
         return name;
     }
 
     return (
-        <nav className='nav'>
-            <ul className='flex space-between nav'>
-                {chapters.map((item) => <li key={item}><Link className='link' to={`/home/${item}`}>{renderName(item)}</Link></li>)}
-            </ul>
+        <nav className='flex space-between nav'>
+                {chapters.map((item) => <Link className='link' key={item} to={`/home/${item}`}>{renderName(item)}</Link>)}
         </nav>
     )
 }
