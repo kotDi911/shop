@@ -4,7 +4,8 @@ import DetailsCard from "../components/details/DetailsCard";
 import {useEffect, useState} from "react";
 
 const Details = () => {
-    const cards = useCards((store) => store.cards)
+    const cards = useCards((store) => store.renderCards)
+    const chapter = useCards((store) => store.chapter)
     const params = useParams();
     const [card, setCard] = useState({
         id: '',
@@ -19,7 +20,7 @@ const Details = () => {
     })
 
     useEffect(() => {
-        setCard(cards.find((card) => card.id === Number(params.id)))
+        setCard(cards(chapter).find((card) => card.id === Number(params.id)))
     }, [])
 
     return (

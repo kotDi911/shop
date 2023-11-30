@@ -1,7 +1,4 @@
 @media (max-width: 1100px) {
-  .grid__cards {
-    grid-template-columns: repeat(5, 1fr);
-  }
   .card {
     &__name {
       font-size: 16px;
@@ -21,6 +18,9 @@
 }
 
 @media (max-width: 900px) {
+  .grid__cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
   .details__btn {
     font-size: 16px;
   }
@@ -30,9 +30,7 @@
 }
 
 @media (max-width: 700px) {
-  .grid__cards{
-    grid-template-columns: repeat(4, 1fr);
-  }
+
   .card {
     &__name {
       padding: 15px 0;

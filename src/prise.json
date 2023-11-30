@@ -1,0 +1,330 @@
+{
+  "wash": [
+    {
+      "id": 1,
+      "name": "Indesit EWDE 71280 W EU",
+      "description": "",
+      "img": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 7000,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 5,
+      "name": "Indesit OMTWE 71483 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 6800,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 6,
+      "name": "Indesit OMTWE 71252 S",
+      "description": "",
+      "img": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 8900,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 7,
+      "name": "Indesit EWDE 71280 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 7300,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 8,
+      "name": "Indesit IWSB 51051 UA",
+      "description": "",
+      "img": "/shop/static/media/indesitIWSB.cff64fe2d8f75e4378fc.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 8500,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 9,
+      "name": "Indesit EWDE 71280 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 7000,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 10,
+      "name": "Indesit IWSB 51051 UA",
+      "description": [],
+      "img": "/shop/static/media/indesitIWSB.cff64fe2d8f75e4378fc.jpg",
+      "characteristic": [
+        {
+          "name": "",
+          "value": ""
+        }
+      ],
+      "price": {
+        "value": 6500,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 11,
+      "name": "Indesit OMTWE 71483 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 8000,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 12,
+      "name": "Indesit OMTWE 71252 S",
+      "description": "",
+      "img": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 8600,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 13,
+      "name": "Indesit OMTWE 71483 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 6800,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 14,
+      "name": "Indesit OMTWE 71252 S",
+      "description": "",
+      "img": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 8900,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 15,
+      "name": "Indesit EWDE 71280 W EU",
+      "description": "",
+      "img": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 7300,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 16,
+      "name": "Indesit IWSB 51051 UA",
+      "description": "",
+      "img": "/shop/static/media/indesitIWSB.cff64fe2d8f75e4378fc.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 8500,
+        "unit": "UA"
+      },
+      "active": false
+    }
+  ],
+  "micro": [
+    {
+      "id": 1,
+      "name": "Indesit EWDE 71280 W EU",
+      "description": "",
+      "img": "/shop/static/media/indesitEWDE.b37a4fb05db7a0187e60.jpg",
+      "characteristic": [
+        {
+          "name": "Гарантия",
+          "value": "12 мес."
+        },
+        {
+          "name": "Тип машины",
+          "value": "автоматическая"
+        },
+        {
+          "name": "Максимальная загрузка",
+          "value": "7кг"
+        },
+        {
+          "name": "Количество программ стирки",
+          "value": "16"
+        }
+      ],
+      "price": {
+        "value": 7000,
+        "unit": "UA"
+      },
+      "active": false
+    },
+    {
+      "id": 5,
+      "name": "Indesit OMTWE 71483 W EU",
+      "description": "Характеристики отдельно стоящей стиральной машины Indesit с горизонтальной загрузкой: отличная вместимость 7 кг. Высокая скорость и экономичность отжима 1400 оборотов в минуту. Белый цвет.",
+      "img": "/shop/static/media/indesitOMTWE.1c8d4c3e9f5a212c2b15.jpg",
+      "characteristic": [],
+      "price": {
+        "value": 6800,
+        "unit": "UA"
+      },
+      "active": false
+    }
+  ],
+  "cold": [],
+  "cook": [],
+  "oven": []
+}

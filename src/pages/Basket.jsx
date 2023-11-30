@@ -51,7 +51,7 @@ const Basket = () => {
                     :
                     (<>
                         <h1 className='message'>Ваша корзина пуста</h1>
-                        <span className='link' onClick={goToHome}>вернуться к покупкам</span>
+                        <span className='basket__link' onClick={goToHome}>вернуться к покупкам</span>
                     </>)
 
             }

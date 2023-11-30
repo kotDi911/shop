@@ -4,12 +4,6 @@
   position: sticky;
   top: 0;
   left: 0;
-  padding: 0 15px;
-
-  &__cont {
-    align-items: center;
-    cursor: pointer;
-  }
 
   &__img, &__basket-btn {
     height: 5vh;
@@ -41,15 +35,27 @@
   }
 }
 
-.logo, .header__basket-img {
-  height: 100%;
+.logo{
+  &__cont {
+    align-items: center;
+    cursor: pointer;
+  }
+  &__img {
+    height: 5vh;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: 36px;
+    margin-left: 10px;
+
+    &:hover {
+      color: yellowgreen;
+    }
+  }
 }
 
-.logo-text {
-  font-size: 36px;
-  margin-left: 10px;
-
-  &:hover {
-    color: yellowgreen;
-  }
+.logo, .header__basket-img {
+  height: 100%;
 }

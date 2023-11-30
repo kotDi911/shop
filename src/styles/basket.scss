@@ -41,6 +41,16 @@
   &__title, &__price{
     font-size: 20px;
   }
+  &__link {
+    font-size: 18px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+
+    &:hover {
+      color: #6b8d25;
+    }
+  }
 }
 
 .clear-btn {
@@ -76,17 +86,6 @@
   font-size: 48px;
   margin: 20px 0;
   cursor: default;
-}
-
-.link {
-  font-size: 18px;
-  text-decoration: underline;
-  color: blue;
-  cursor: pointer;
-
-  &:hover {
-    color: #6b8d25;
-  }
 }
 
 .sum{

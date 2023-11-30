@@ -10,17 +10,19 @@ const Header = () => {
     }
 
     return (
-        <div className='header flex space-between'>
-            <header className='header__cont flex align-i-center' onClick={goHomePage}>
-                <div className='header__img'>
-                    <img src={logo} className='logo' alt='logo'/>
-                </div>
-                <span className='logo-text'>
+        <header className='header'>
+            <div className='container flex space-between'>
+                <div className='logo__cont flex align-i-center' onClick={goHomePage}>
+                    <div className='logo__img'>
+                        <img src={logo} className='logo' alt='logo'/>
+                    </div>
+                    <span className='logo__text'>
                     Internet Shop
                 </span>
-            </header>
-            <HeaderBasket/>
-        </div>
+                </div>
+                <HeaderBasket/>
+            </div>
+        </header>
     )
 }
 

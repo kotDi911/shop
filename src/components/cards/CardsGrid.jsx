@@ -3,9 +3,9 @@ import Card from './Card';
 import {useEffect} from "react";
 
 const CardsGrid = () => {
-    const cards = useCards((store) => store.cards)
+    const cards = useCards((store) => store.renderCards)
+    const chapter = useCards((store) => store.chapter)
     const selectedCards = useCards((store) => store.selectedCards)
-
     useEffect(() => {
         localStorage.setItem('cards', JSON.stringify(selectedCards));
     }, [selectedCards]);
@@ -18,7 +18,7 @@ const CardsGrid = () => {
 
     return (
         <div className='grid grid__cards'>
-            {cards.map((card) => (<Card key={card.id} {...card} active={filter(card)}/>))}
+            {cards(chapter).map((card) => (<Card key={card.id} {...card} active={filter(card)}/>))}
         </div>
     )
 }
