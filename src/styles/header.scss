@@ -4,7 +4,9 @@
   position: sticky;
   top: 0;
   left: 0;
-
+ &__cont{
+   align-items: center;
+ }
   &__img, &__basket-btn {
     height: 5vh;
     margin: 10px 0;

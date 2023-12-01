@@ -3,11 +3,11 @@
   box-shadow: 0 0 7px 1px;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid white;
 
   &:hover {
     box-shadow: 0 0 8px 4px;
-    border: 2px solid black;
+    transform: scale(1.02);
+    z-index: -1;
     background: linear-gradient(0deg, #0055ff, transparent 18%);
   }
 
@@ -21,7 +21,7 @@
   &__img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 
     &-cont {
       height: 10rem;

@@ -7,16 +7,28 @@ import {useCards} from "../store/store";
 const Home = () => {
     const {pathname} = useLocation();
     const navigate = useNavigate()
-    const cards = useCards((store) => store.cards)
+
+    const data = useCards((store) => store.data)
     const chapter = useCards((store) => store.chapter)
     const setChapter = useCards((store) => store.setChapter)
-    const chapters = Object.keys(cards);
+    const chapters = Object.keys(data);
+
+    const cards = (chapter) =>{
+        let cardM = []
+        for(let name in data){
+            if(name === chapter){
+                cardM = data[name]
+            }
+        }
+        return cardM;
+    }
 
     useEffect(() => {
         if (chapter === null) {
-            setChapter(Object.keys(cards)[0])
+            setChapter(Object.keys(data)[0])
         }
-        if (pathname === "/home") {
+
+        if (pathname === "/shop" || pathname === "/home") {
             navigate(`/home/${chapter}`)
             setChapter(chapter)
         } else {
@@ -31,7 +43,7 @@ const Home = () => {
         <section className='container'>
             <div className='flex column'>
                 <Navigation chapters={chapters}/>
-                <CardsGrid/>
+                <CardsGrid cards={cards(chapter)}/>
             </div>
         </section>
     )

@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className='header'>
-            <div className='container flex space-between'>
+            <div className='container header__cont flex space-between'>
                 <div className='logo__cont flex align-i-center' onClick={goHomePage}>
                     <div className='logo__img'>
                         <img src={logo} className='logo' alt='logo'/>

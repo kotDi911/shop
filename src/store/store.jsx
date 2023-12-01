@@ -2,24 +2,28 @@ import {create} from 'zustand'
 import price from '../prise.json'
 
 export const useCards = create((set, get) => ({
-    cards: price,
-    detailsCard: JSON.parse(sessionStorage.getItem('details')),
+    data: price,
     filterCards: ()=>{
 
     },
     selectedCards: [],
     count: 0,
     chapter: 'wash',
-    renderCards : (chapter) =>{
-        const {cards} = get();
-        let cardM = []
-        for(let name in cards){
-            if(name === chapter){
-                cardM = cards[name]
-            }
-        }
-        return cardM;
+    renderCards: [],
+    setRenderCards: (card) =>{
+        const {renderCards} = get();
+        set({renderCards: card});
     },
+    // cards : (chapter) =>{
+    //     const {data} = get();
+    //     let cardM = []
+    //     for(let name in data){
+    //         if(name === chapter){
+    //             cardM = data[name]
+    //         }
+    //     }
+    //     return cardM;
+    // },
     setChapter: (name) =>{
         const {chapter} = get();
         set({chapter: name});

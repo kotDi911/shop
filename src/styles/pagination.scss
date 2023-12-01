@@ -1,0 +1,16 @@
+.paginator{
+  margin: 5px auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  &__nav{
+    background: #0055ff;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+  }
+}
+.arrow{
+
+}

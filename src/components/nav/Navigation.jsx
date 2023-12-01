@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 const Navigation = ({chapters}) => {
+    const [isActive, setIsActive] = useState(false)
     const renderName =(name)=>{
         switch (name){
             case 'wash':
@@ -24,11 +26,25 @@ const Navigation = ({chapters}) => {
         }
         return name;
     }
+    const handleClickBurger = ()=>{setIsActive(!isActive)}
 
     return (
-        <nav className='flex space-between nav'>
-                {chapters.map((item) => <Link className='link' key={item} to={`/home/${item}`}>{renderName(item)}</Link>)}
-        </nav>
+        <div className="nav">
+            <div className="burger" onClick={handleClickBurger}>
+                {!isActive ? ">" : "<"}
+            </div>
+            <nav className={`flex space-between nav__cont ${isActive && 'active'}`}>
+                {chapters.map((item) =>
+                    <Link
+                        className='link'
+                        key={item}
+                        to={`/home/${item}`}
+                        onClick={()=>setIsActive(false)}
+                    >
+                        {renderName(item)}
+                    </Link>)}
+            </nav>
+        </div>
     )
 }
 
