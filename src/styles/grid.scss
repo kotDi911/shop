@@ -2,7 +2,7 @@
   display: grid;
   margin: 15px 5px;
   &__cards{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     row-gap: 4vh;
     column-gap: 2%;
   }
