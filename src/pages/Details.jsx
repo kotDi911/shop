@@ -11,9 +11,9 @@ const Details = () => {
     }, [params])
 
     return (
-        <>
+        <section className="section">
             <DetailsCard card={card}/>
-        </>
+        </section>
     )
 }
 

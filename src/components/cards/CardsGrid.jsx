@@ -5,13 +5,11 @@ import Pagination from "../nav/Pagination";
 
 const CardsGrid = ({cards}) => {
     const selectedCards = useCards((store) => store.selectedCards)
-    // const setRenderCards = useCards((store) => store.setRenderCards)
-    // const renderCards = useCards((store) => store.renderCards)
 
     const [page, setPage] = useState(1);
 
     const [isActive, setIsActive] = useState(true);
-    const ROWS_PER_PAGE = 4;
+    const ROWS_PER_PAGE = 12;
     const [renderCards, setRenderCards] = useState(cards.filter((card, index) => {
         if (index + 1 >= page && index < page * ROWS_PER_PAGE) {
             return card
@@ -23,9 +21,8 @@ const CardsGrid = ({cards}) => {
         localStorage.setItem('cards', JSON.stringify(selectedCards));
     }, [selectedCards]);
 
-    useEffect(() => {
-        setPage(1)
-    }, [cards]);
+    useEffect(() => {setPage(1)}, [cards]);
+    useEffect(() => window.scrollTo({top: 0, behavior: "smooth"}), [page]);
 
     useEffect(() => {
         if(!renderCards.length){
@@ -35,7 +32,6 @@ const CardsGrid = ({cards}) => {
                     return card
                 }
             }))
-            console.log("if", page)
         }else {
             setRenderCards(cards.filter((card, index) => {
                 if (index >= (page-1) * ROWS_PER_PAGE&& index < page * ROWS_PER_PAGE) {
@@ -47,10 +43,7 @@ const CardsGrid = ({cards}) => {
             }else {
                 setIsActive(false)
             }
-            console.log("else", page)
         }
-        console.log(cards)
-        console.log(page)
     },[page, cards])
 
     const filter = (card) => {

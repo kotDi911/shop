@@ -28,34 +28,36 @@ const Basket = () => {
     }
 
     return (
-        <div className="basket flex column">
-            {selectedCards.map((card) =>
-                <BasketCard
-                    key={card.id}
-                    name={card.name}
-                    img={card.img}
-                    price={card.price}
-                    id={card.id}
-                />
-            )}
-            {
-                isButton
-                    ?
-                    (<>
-                        <div className='basket__card flex sum'>
-                            <p className='sum__title'>Сумма:</p>
-                            <p className='sum__price'>{sum}</p>
-                        </div>
-                        <button className='clear-btn' onClick={clear}>Clear All</button>
-                    </>)
-                    :
-                    (<>
-                        <h1 className='message'>Ваша корзина пуста</h1>
-                        <span className='basket__link' onClick={goToHome}>вернуться к покупкам</span>
-                    </>)
+        <section className="section">
+            <div className="basket flex column">
+                {selectedCards.map((card) =>
+                    <BasketCard
+                        key={card.id}
+                        name={card.name}
+                        img={card.img}
+                        price={card.price}
+                        id={card.id}
+                    />
+                )}
+                {
+                    isButton
+                        ?
+                        (<>
+                            <div className='basket__card flex sum'>
+                                <p className='sum__title'>Сумма:</p>
+                                <p className='sum__price'>{sum}</p>
+                            </div>
+                            <button className='clear-btn' onClick={clear}>Clear All</button>
+                        </>)
+                        :
+                        (<>
+                            <h1 className='message'>Ваша корзина пуста</h1>
+                            <span className='basket__link' onClick={goToHome}>вернуться к покупкам</span>
+                        </>)
 
-            }
-        </div>
+                }
+            </div>
+        </section>
     )
 }
 

@@ -3,14 +3,26 @@
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  padding: 2% 0;
   &__nav{
     background: #0055ff;
-    padding: 5px 10px;
+    padding: 5px 10px 8px;
     border: 2px solid black;
     border-radius: 20px;
     color: white;
   }
 }
 .arrow{
-
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+  background: #0055ff;
+  color: white;
+  border: 2px solid black;
+  &:disabled{
+    background: rgba(0, 85, 255, 0.5);
+    border: 2px solid gray;
+  }
 }

@@ -25,6 +25,7 @@ const Card = (card) => {
     const goToDescription = () => {
         sessionStorage.setItem('details', JSON.stringify(card))
         navigation(`/details/${id+name}`)
+        window.scrollTo(0,0)
     }
 
     const basketHandleClick = () => {
@@ -47,7 +48,7 @@ const Card = (card) => {
                 </div>
                 <h3 className='card__name'>{name}</h3>
                 <p className='card__description'>
-                    {description}
+                    {description.slice(0,220)}
                 </p>
                 <p className='card__price-text'>
                     <b>Цена: </b> {value} <span>{unit}</span>

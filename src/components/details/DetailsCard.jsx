@@ -17,7 +17,8 @@ const DetailsCard = ({card}) => {
     useEffect(() => {
         isActive ? setImgBtn(byBtnA) : setImgBtn(byBtn)
         selectedCards.filter((item) => item.id === card.id).length !== 0 && setIsActive(true)
-    })
+        console.log(isActive)
+    },[isActive])
 
     const basketHandleClick = () => {
         setIsActive(!isActive)

@@ -223,6 +223,25 @@
     width: 8%;
     font-size: 24px;
   }
+  .footer__contacts{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    & .social{
+      justify-content: center;
+    }
+  }
+  .dev{
+    &__description{
+      margin-left: 5px;
+      padding: 10px;
+    }
+    &__block{
+      padding: 10px;
+    }
+  }
 }
 
 @media (max-width: 400px) {
@@ -266,7 +285,5 @@
   .text__title {
     font-size: 18px;
   }
-  .burger {
-    font-size: 18px;
-  }
+
 }

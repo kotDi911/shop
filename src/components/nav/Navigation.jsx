@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {useState} from "react";
+import React, {useState} from "react";
 
 const Navigation = ({chapters}) => {
     const [isActive, setIsActive] = useState(false)
@@ -48,4 +48,4 @@ const Navigation = ({chapters}) => {
     )
 }
 
-export default Navigation
+export default React.memo(Navigation)

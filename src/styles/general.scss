@@ -11,6 +11,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #282c34;
 }
 
 code {
@@ -44,4 +45,8 @@ a{
 .container{
   width: 95%;
   margin: 0 auto;
+}
+.section{
+  background: white;
+  padding-bottom: 3%;
 }
