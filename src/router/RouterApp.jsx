@@ -30,7 +30,7 @@ const RouterApp = () => {
                     <Route path=':page' element={<CardsGrid/>}/>
                 </Route>
                 <Route path='/basket' element={<Basket/>}/>
-                <Route path='/details/:name' element={<Details/>}/>
+                <Route path='/details/:id' element={<Details/>}/>
                 <Route path='/contacts' element={<Contacts props={developerData}/>}/>
                 <Route path='/aboutus' element={<About/>}/>
                 <Route path='/transport' element={<Transport/>}/>

@@ -17,8 +17,7 @@ const DetailsCard = ({card}) => {
     useEffect(() => {
         isActive ? setImgBtn(byBtnA) : setImgBtn(byBtn)
         selectedCards.filter((item) => item.id === card.id).length !== 0 && setIsActive(true)
-        console.log(isActive)
-    },[isActive])
+    }, [isActive])
 
     const basketHandleClick = () => {
         setIsActive(!isActive)
@@ -44,11 +43,14 @@ const DetailsCard = ({card}) => {
                         <b>Стоимость товара: </b> {value} <span>{unit}</span>
                     </p>
                     <button className='details__btn flex' onClick={basketHandleClick}>
-                        <b>{!isActive ? 'Добавить' : 'Убрать'}</b> <img className='details__btn-img' src={imgBtn} alt=""/>
+                        <b>{!isActive ? 'Добавить' : 'Убрать'}</b> <img className='details__btn-img' src={imgBtn}
+                                                                        alt=""/>
                     </button>
                 </div>
             </div>
-            {characteristic.length > 0 && <DetailsGrid characteristic={characteristic}/>}
+            <div className='grid grid__details details__description' style={{backgroundImage: `url(${img})`}}>
+                {characteristic.length > 0 && <DetailsGrid characteristic={characteristic}/>}
+            </div>
         </div>
     )
 }

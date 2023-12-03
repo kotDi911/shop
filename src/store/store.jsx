@@ -14,16 +14,6 @@ export const useCards = create((set, get) => ({
         const {renderCards} = get();
         set({renderCards: card});
     },
-    // cards : (chapter) =>{
-    //     const {data} = get();
-    //     let cardM = []
-    //     for(let name in data){
-    //         if(name === chapter){
-    //             cardM = data[name]
-    //         }
-    //     }
-    //     return cardM;
-    // },
     setChapter: (name) =>{
         const {chapter} = get();
         set({chapter: name});

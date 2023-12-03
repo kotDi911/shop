@@ -24,7 +24,7 @@ const Card = (card) => {
 
     const goToDescription = () => {
         sessionStorage.setItem('details', JSON.stringify(card))
-        navigation(`/details/${id+name}`)
+        navigation(`/details/${id}`)
         window.scrollTo(0,0)
     }
 

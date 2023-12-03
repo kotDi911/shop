@@ -17,6 +17,7 @@
   }
   .details__btn {
     font-size: 18px;
+    height: 5vw;
   }
 }
 
@@ -95,6 +96,9 @@
   }
   .link {
     font-size: 18px;
+  }
+  .details__btn {
+    height: 6vw;
   }
 
 }
@@ -200,7 +204,7 @@
     }
 
     &__btn {
-      height: 10vw;
+      height: 8vw;
     }
   }
   .text__title {
@@ -273,7 +277,7 @@
     }
   }
   .details__btn {
-    height: 12vw;
+    height: 10vw;
   }
   .card {
     &__price-text {
