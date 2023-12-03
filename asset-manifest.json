@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.3405ef53.css",
-    "main.js": "/shop/static/js/main.7f83d45d.js",
+    "main.css": "/shop/static/css/main.55068ea6.css",
+    "main.js": "/shop/static/js/main.76be61cd.js",
+    "static/media/indesitIWUB.jpg": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
     "static/media/fb.ico": "/shop/static/media/fb.5ff2f631619fc044a34c.ico",
     "static/media/git.ico": "/shop/static/media/git.d24db33c9e14d7b17946.ico",
     "static/media/insta.ico": "/shop/static/media/insta.617de1dfcb47d6d6de2e.ico",
@@ -15,11 +16,11 @@
     "static/media/basket.svg": "/shop/static/media/basket.14b42f9aee0ccff92547d5d6f5b43b18.svg",
     "static/media/trashBasket.svg": "/shop/static/media/trashBasket.7e81fb4a8503f9f86319ad038be843c3.svg",
     "index.html": "/shop/index.html",
-    "main.3405ef53.css.map": "/shop/static/css/main.3405ef53.css.map",
-    "main.7f83d45d.js.map": "/shop/static/js/main.7f83d45d.js.map"
+    "main.55068ea6.css.map": "/shop/static/css/main.55068ea6.css.map",
+    "main.76be61cd.js.map": "/shop/static/js/main.76be61cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3405ef53.css",
-    "static/js/main.7f83d45d.js"
+    "static/css/main.55068ea6.css",
+    "static/js/main.76be61cd.js"
   ]
 }
