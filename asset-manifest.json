@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.55068ea6.css",
-    "main.js": "/shop/static/js/main.76be61cd.js",
+    "main.css": "/shop/static/css/main.f22bdc58.css",
+    "main.js": "/shop/static/js/main.11cb01a4.js",
     "static/media/indesitIWUB.jpg": "/shop/static/media/indesitIWUB.95e2a4daca5a33e806eb.jpg",
     "static/media/fb.ico": "/shop/static/media/fb.5ff2f631619fc044a34c.ico",
     "static/media/git.ico": "/shop/static/media/git.d24db33c9e14d7b17946.ico",
@@ -10,17 +10,20 @@
     "static/media/tiktok.ico": "/shop/static/media/tiktok.fd7419462f9bfa1d31f5.ico",
     "static/media/viber.ico": "/shop/static/media/viber.73f9fc33d3e613dc02a5.ico",
     "static/media/logo.svg": "/shop/static/media/logo.96067ced27fabae2bd901a1dbafe4518.svg",
+    "static/media/delete.svg": "/shop/static/media/delete.c8f8bc336fa97d263b7a968f69a6cdc5.svg",
     "static/media/addToBasket.svg": "/shop/static/media/addToBasket.c785c9368937c13e8a52275221448cb0.svg",
     "static/media/addToBasketActive.svg": "/shop/static/media/addToBasketActive.66f75148518994f8e763af64bcd2182a.svg",
     "static/media/basketActive.svg": "/shop/static/media/basketActive.638f7fc7e00eb6b4b75ae8164cc79926.svg",
     "static/media/basket.svg": "/shop/static/media/basket.14b42f9aee0ccff92547d5d6f5b43b18.svg",
-    "static/media/trashBasket.svg": "/shop/static/media/trashBasket.7e81fb4a8503f9f86319ad038be843c3.svg",
+    "static/media/plus.svg": "/shop/static/media/plus.f12e93d598ee6e245eddbcb1ef11996e.svg",
+    "static/media/minus.svg": "/shop/static/media/minus.142defeac27ef34f4d9e5fd83865ebc1.svg",
     "index.html": "/shop/index.html",
-    "main.55068ea6.css.map": "/shop/static/css/main.55068ea6.css.map",
-    "main.76be61cd.js.map": "/shop/static/js/main.76be61cd.js.map"
+    "static/media/back.svg": "/shop/static/media/back.a19f52b3816be2ab3f3170b7c47e63aa.svg",
+    "main.f22bdc58.css.map": "/shop/static/css/main.f22bdc58.css.map",
+    "main.11cb01a4.js.map": "/shop/static/js/main.11cb01a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.55068ea6.css",
-    "static/js/main.76be61cd.js"
+    "static/css/main.f22bdc58.css",
+    "static/js/main.11cb01a4.js"
   ]
 }
