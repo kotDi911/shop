@@ -5,20 +5,18 @@ import Pagination from "../nav/Pagination";
 
 const CardsGrid = ({cards}) => {
     const selectedCards = useCards((store) => store.selectedCards)
-
     const [page, setPage] = useState(1);
-
-    const [isActive, setIsActive] = useState(true);
     const ROWS_PER_PAGE = 12;
+    const getTotalPageCount = Math.ceil(cards.length / ROWS_PER_PAGE);
+    const [isActive, setIsActive] = useState(false);
     const [renderCards, setRenderCards] = useState(cards.filter((card, index) => {
         if (index + 1 >= page && index < page * ROWS_PER_PAGE) {
             return card
         }
     }))
-    const getTotalPageCount = Math.ceil(cards.length / ROWS_PER_PAGE);
 
     useEffect(() => {
-        localStorage.setItem('cards', JSON.stringify(selectedCards));
+        selectedCards.length > 0 && localStorage.setItem('cards', JSON.stringify(selectedCards));
     }, [selectedCards]);
 
     useEffect(() => {setPage(1)}, [cards]);
@@ -45,12 +43,6 @@ const CardsGrid = ({cards}) => {
             }
         }
     },[page, cards])
-
-    const filter = (card) => {
-        let active = false;
-        selectedCards.find((item) => item.id === card.id ? active = true : active = false)
-        return active;
-    }
 
     const handleNextPageClick = useCallback(() => {
         const current = page;
@@ -80,7 +72,7 @@ const CardsGrid = ({cards}) => {
     return (
         <>
             <div className='grid grid__cards'>
-                {renderCards.map((card) => (<Card key={card.id} {...card} active={filter(card)}/>))}
+                {renderCards.map((card) => (<Card key={card.id} {...card}/>))}
             </div>
             {isActive ?
                 <Pagination

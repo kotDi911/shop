@@ -2,41 +2,22 @@ import {useNavigate} from "react-router";
 import byBtn from '../../assets/addToBasket.svg'
 import byBtnA from '../../assets/addToBasketActive.svg'
 import {useCards} from "../../store/store";
-import {useEffect, useState} from "react";
 
 const Card = (card) => {
     const addToBasket = useCards((store) => store.addToBasket)
-    const delSelectedCards = useCards((store) => store.delSelectedCards)
-    const selectedCards = useCards((store) => store.selectedCards)
-    const {id, name, img, price, active, description} = card;
+    const chapter = useCards((store) => store.chapter)
+    const {id, name, img, price, description} = card;
     const {value, unit} = price;
     const navigation = useNavigate();
-    const [imgBtn, setImgBtn] = useState('')
-    const [isActive, setIsActive] = useState(active)
-
-    useEffect(() => {
-        isActive ? setImgBtn(byBtnA) : setImgBtn(byBtn)
-    }, [])
-
-    useEffect(() => {
-        isActive ? setImgBtn(byBtnA) : setImgBtn(byBtn)
-    }, [selectedCards])
 
     const goToDescription = () => {
         sessionStorage.setItem('details', JSON.stringify(card))
         navigation(`/details/${id}`)
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
 
     const basketHandleClick = () => {
-        setIsActive(!isActive)
-        if (!isActive) {
-            addToBasket(card);
-            setImgBtn(byBtnA)
-        } else {
-            delSelectedCards(id);
-            setImgBtn(byBtn)
-        }
+        addToBasket({...card,count: 1, chapter: chapter});
     }
 
     return (
@@ -48,14 +29,15 @@ const Card = (card) => {
                 </div>
                 <h3 className='card__name'>{name}</h3>
                 <p className='card__description'>
-                    {description.slice(0,220)}
+                    {description.slice(0, 220)}
                 </p>
                 <p className='card__price-text'>
                     <b>Цена: </b> {value} <span>{unit}</span>
                 </p>
             </div>
-            <button className='card__basket-btn' onClick={basketHandleClick}>
-                <img className='card__basket-img' src={imgBtn} alt=""/>
+            <button className='card__basket-btn flex' onClick={basketHandleClick}>
+                <b>Добавить</b>
+                <img className='card__basket-img' src={byBtn} alt=""/>
             </button>
         </div>
     )

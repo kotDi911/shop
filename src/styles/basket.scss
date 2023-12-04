@@ -6,6 +6,7 @@
     justify-content: space-between;
     box-shadow: 0 0 7px 1px;
     padding: 5px 15px;
+    background: #ffffffe3;
 
     &:not(:first-child) {
       margin-top: 5px;
@@ -38,7 +39,7 @@
       background: darkred;
     }
   }
-  &__title, &__price{
+  &__title, &__sum{
     font-size: 20px;
   }
   &__link {
@@ -65,18 +66,22 @@
     background: darkred;
   }
 }
-
-.del-button {
-  height: 5vh;
-  width: 5vh;
-  padding: 5px;
-  background: #6b8d25;
-  border-radius: 5px;
-  border: 1px solid black;
+.del-button{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.count_btn {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.count, .price {
+  padding: 0 0.5rem;
+  font-size: 18px;
+}
+.del-button, .count_btn {
+  border: none;
+  background: none;
   cursor: pointer;
-  &:hover{
-    background: darkred;
-  }
   &-img {
     width: 100%;
   }

@@ -1,31 +1,18 @@
 import byBtnA from "../../assets/addToBasketActive.svg";
 import byBtn from "../../assets/addToBasket.svg";
 import {useCards} from "../../store/store";
-import {useEffect, useState} from "react";
 import DetailsGrid from "./DetailsGrid";
 
 
 const DetailsCard = ({card}) => {
-    const {name, img, price, description, characteristic, id} = card;
+    const {name, img, price, description, characteristic} = card;
     const {value, unit} = price;
     const addToBasket = useCards((store) => store.addToBasket)
-    const delSelectedCards = useCards((store) => store.delSelectedCards)
-    const selectedCards = useCards((store) => store.selectedCards)
-    const [imgBtn, setImgBtn] = useState(byBtn)
-    const [isActive, setIsActive] = useState(false)
-
-    useEffect(() => {
-        isActive ? setImgBtn(byBtnA) : setImgBtn(byBtn)
-        selectedCards.filter((item) => item.id === card.id).length !== 0 && setIsActive(true)
-    }, [isActive])
+    const chapter = useCards((store) => store.chapter)
 
     const basketHandleClick = () => {
-        setIsActive(!isActive)
-        if (!isActive) {
-            addToBasket(card);
-        } else {
-            delSelectedCards(id);
-        }
+        card = {...card, chapter: chapter}
+        addToBasket(card);
     }
 
     return (
@@ -43,8 +30,7 @@ const DetailsCard = ({card}) => {
                         <b>Стоимость товара: </b> {value} <span>{unit}</span>
                     </p>
                     <button className='details__btn flex' onClick={basketHandleClick}>
-                        <b>{!isActive ? 'Добавить' : 'Убрать'}</b> <img className='details__btn-img' src={imgBtn}
-                                                                        alt=""/>
+                        <b>Добавить</b> <img className='details__btn-img' src={byBtn} alt=""/>
                     </button>
                 </div>
             </div>

@@ -40,8 +40,7 @@
       "price": {
         "value": 11000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 2,
@@ -83,8 +82,7 @@
       "price": {
         "value": 13000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 3,
@@ -126,8 +124,7 @@
       "price": {
         "value": 20000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 4,
@@ -169,8 +166,7 @@
       "price": {
         "value": 9440,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 5,
@@ -212,8 +208,7 @@
       "price": {
         "value": 7900,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 6,
@@ -255,8 +250,7 @@
       "price": {
         "value": 22050,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 7,
@@ -298,8 +292,7 @@
       "price": {
         "value": 13000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 8,
@@ -341,8 +334,7 @@
       "price": {
         "value": 16000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 9,
@@ -384,8 +376,7 @@
       "price": {
         "value": 16000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 10,
@@ -427,8 +418,7 @@
       "price": {
         "value": 17000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 11,
@@ -470,8 +460,7 @@
       "price": {
         "value": 11000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 12,
@@ -513,8 +502,7 @@
       "price": {
         "value": 13000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 13,
@@ -556,8 +544,7 @@
       "price": {
         "value": 20000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 14,
@@ -599,8 +586,7 @@
       "price": {
         "value": 9440,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 15,
@@ -642,8 +628,7 @@
       "price": {
         "value": 7900,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 16,
@@ -685,8 +670,7 @@
       "price": {
         "value": 22050,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 17,
@@ -728,8 +712,7 @@
       "price": {
         "value": 13000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 18,
@@ -771,8 +754,7 @@
       "price": {
         "value": 16000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 19,
@@ -814,8 +796,7 @@
       "price": {
         "value": 16000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 20,
@@ -857,8 +838,7 @@
       "price": {
         "value": 17000,
         "unit": "UA"
-      },
-      "active": false
+      }
     }
   ],
   "micro": [
@@ -902,8 +882,7 @@
       "price": {
         "value": 2900,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 2,
@@ -945,8 +924,7 @@
       "price": {
         "value": 3000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 3,
@@ -988,8 +966,7 @@
       "price": {
         "value": 6800,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 4,
@@ -1031,8 +1008,7 @@
       "price": {
         "value": 2900,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 5,
@@ -1074,8 +1050,7 @@
       "price": {
         "value": 3000,
         "unit": "UA"
-      },
-      "active": false
+      }
     },
     {
       "id": 6,
@@ -1117,8 +1092,7 @@
       "price": {
         "value": 6800,
         "unit": "UA"
-      },
-      "active": false
+      }
     }
   ],
   "cold": [],

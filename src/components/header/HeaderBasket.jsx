@@ -1,5 +1,6 @@
 import basket from '../../assets/basket.svg'
 import basketA from '../../assets/basketActive.svg'
+import back from "../../assets/back.svg"
 import {useCards} from "../../store/store";
 import {useEffect, useState} from "react";
 import {useLocation, useNavigate} from "react-router";
@@ -7,15 +8,20 @@ import {useLocation, useNavigate} from "react-router";
 const HeaderBasket = () => {
     const navigate = useNavigate()
     const {pathname} = useLocation()
-    const updCounter = useCards((store) => store.updCounter)
+    const updCounter = useCards((store) => store.updHeaderBasketCount)
     const selectedCards = useCards((store) => store.selectedCards)
-    const count = useCards((store) => store.count)
+    const count = useCards((store) => store.headerBasketCount)
     const [img, setImg] = useState(basket)
-
     useEffect(() => {
         updCounter();
-        selectedCards.length > 0 ? setImg(basketA) : setImg(basket)
-    }, [selectedCards.length])
+        if(pathname !== "/basket"){
+            selectedCards.length > 0 ? setImg(basketA) : setImg(basket)
+        }else {
+            setImg(back)
+        }
+        console.log(selectedCards.length)
+        // selectedCards.length === 0 && localStorage.removeItem("cards")
+    }, [selectedCards.length, pathname])
 
     const toggle =()=>{
         pathname === '/basket' ? navigate(-1) : navigate('/basket')
